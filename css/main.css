@@ -2,12 +2,20 @@
 	position: relative;
 	display: table;
 	width: 90%;
-	/*border-bottom: 1px solid #c9c9c9;*/
 	margin-left: 80px;
 	padding-left: 10px;
 	border-color: #a9a9a9;
 	border-left: 5px solid;
-	/*border-bottom: 5px solid;*/
+}
+.comentario::before{
+	background-color: #fff;
+	content: "";
+	display: block;
+		width: 101%;
+		height: 10px;
+	position: absolute;
+		top: -7px;
+		left: -5px;
 }
 .comentario::after{
 	position: absolute;
