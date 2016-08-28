@@ -1,64 +1,93 @@
-.comentario {
-	position: relative;
+body, html{
+	margin: 0;
+	background-color: #232728;
+	color: #fff;
+}
+header.main{
 	display: table;
+	width: 100%;
+	color: #fff;
+	padding: 50px 0 30px;
+	text-align: center;
+	background-color: #54595d;
+	box-shadow: 0 1px 5px 2px #54595d;
+}
+
+main{
+	padding-top: 50px;
 	width: 90%;
+	margin-left: 10%;
+}
+	main header{
+		border-bottom: 1px solid #d9d9d9;
+		margin-bottom: 80px;
+		padding-left: 10%;
+	}
+.comentario {
+	border-left: 5px solid;
+	border-right: 5px solid;	
+	display: table;
+		width: 90%;
 	margin-left: 80px;
 	padding-left: 10px;
-	border-color: #a9a9a9;
-	border-left: 5px solid;
+	padding-bottom: 20px;
+	position: relative;
 }
-.comentario::before{
-	background-color: #fff;
-	content: "";
-	display: block;
-		width: 101%;
-		height: 10px;
-	position: absolute;
-		top: -7px;
-		left: -5px;
+.comentario:hover{
+	-webkit-filter: brightness(170%);
+	-o-filter: brightness(170%);
+	filter: brightness(170%);
+	box-shadow: 0 7px 20px 1px #090909;
 }
 .comentario::after{
-	position: absolute;
-	top: -20px;
-	left: -12px;
-	z-index: 1000;
 	content: ' \25CF';
 	font-size: 30px;
+	position: absolute;
+		left: -12px;
+		top: -20px;
+		z-index: 1000;
 }
 .comentario:nth-child(2n){
 	border-color: #59a959;
+	background-color: rgba(89, 169, 89, 0.3);
 }
 .comentario:nth-child(2n)::after{
 	color: #59a959;
 }
 .comentario:nth-child(2n+1){
 	border-color: #b9a9c9;
+	background-color: rgba(89, 89, 169, 0.3);
 }
 .comentario:nth-child(2n+1)::after{
 	color: #b9a9c9;
 }
 .comentario:nth-child(3n){
 	border-color: #a95959;
+	background-color: rgba(169, 89, 89, 0.3);
 }
 .comentario:nth-child(3n)::after{
 	color: #a95959;
 }
 .comentario:nth-child(5n){
 	border-color: #a9a959;	
+	background-color: rgba(169, 169, 89, 0.3);
 }
 .comentario:nth-child(5n)::after{
 	color:#a9a959;
 }
-
 .comentario.destaque{
 	font-size: 1.2em;
 	margin-left: 50px;
 	padding-left: 40px;
-	border-left: 5px solid #5959a9;
-	border-bottom: 5px solid #5959a9;
+	border: 5px solid #5959a9;
 	border-radius: 0 0 0 20px;
+	background-color: rgba(89, 89, 169, 0.3);
 }
 .comentario.destaque::after{
 	content: '\25CF';
 	color: #5959a9;
+}
+
+h2,h3{
+	/*color: #4D5159;*/
 }
